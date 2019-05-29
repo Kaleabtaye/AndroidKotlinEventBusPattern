@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/activity_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp"
+                android:background="20dp"
+                tools:context="com.example.eventbuspattern.MainActivity">
+    <TextView
+            android:id="@+id/text_info"
+            android:layout_width="327dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="24dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true" android:hint="Enter the message to send to the event bus"/>
+    <TextView
+            android:id="@+id/event_bus_text"
+            android:layout_width="308dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="24dp"
+            android:layout_below="@+id/text_info"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorAccent"/>
+    <Button
+            android:id="@+id/service_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_below="@+id/event_bus_text"
+            android:background="#54738B"
+            android:text="@string/start_intent_service"
+            android:layout_marginTop="64dp"
+            android:layout_centerHorizontal="true"/>
+</RelativeLayout>
